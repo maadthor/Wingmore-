@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Wingmore Exim</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      margin:0; padding:0;
+      font-family: Arial, sans-serif;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      overflow:hidden;
+    }
+
+    /* Background image */
+    body::before {
+      content:"";
+      position:absolute;
+      top:0; left:0; right:0; bottom:0;
+      background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      z-index:-1;
+    }
+
+    .container {
+      background: rgba(255,255,255,0.85);
+      padding:30px 20px;
+      border-radius:15px;
+      max-width:400px;
+      width:90%;
+      box-shadow:0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      font-size:1.6rem;
+      margin-bottom:25px;
+      font-weight:bold;
+      color:#333;
+    }
+
+    /* Custom colors for "Wingmore" */
+    .wing { color:#10458A; }
+    .more { color:#E68E22; }
+
+    a.btn {
+      display:block;
+      width:100%;
+      padding:15px;
+      margin:12px auto;
+      border-radius:10px;
+      text-decoration:none;
+      font-size:18px;
+      font-weight:bold;
+      color:#fff;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      box-sizing:border-box;
+    }
+    a.btn:hover {
+      transform:scale(1.05);
+    }
+
+    .wa { background:#25D366; }
+    .site { background:#0073e6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      Welcome to the <span class="wing">Wing</span><span class="more">more</span> Exim
+    </h1>
+
+    <!-- WhatsApp link -->
+    <a class="btn wa" href="https://wa.me/918408840982?text=Hello%20from%20QR" target="_blank" rel="noopener">
+      💬 Chat on WhatsApp
+    </a>
+
+    <!-- Website link -->
+    <a class="btn site" href="https://wingmoreexim.com/" target="_blank" rel="noopener">
+      🌐 Visit Website
+    </a>
+  </div>
+</body>
+</html>
